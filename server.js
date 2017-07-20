@@ -58,6 +58,12 @@ app.get('/help', (req, res) => {
   res.render('help')
 })
 
+app.get('/projects', (req, res) => {
+  res.render('projects', {
+    pageTitle: 'Projects'
+  })
+})
+
 app.listen(port, () => {
   console.log(`Server Started in Port ${port}`)
 })
